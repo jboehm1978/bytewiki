@@ -560,9 +560,9 @@ The output that is shown in prompt afterwards:
 8.4 Troubleshooting
 -------------------
 
--  **Errors during build of the toolchain**
+-  **Errors when building the toolchain**
 
-   If you get the following error when building the toolchain:
+   If you get the error below, please revert commit: :guilabel:`179c5cb7fd0f06970135187f1203507aa55d6bde` in the poky repository (sources/poky). See also Bug 13338 https://bugzilla.yoctoproject.org/show_bug.cgi?id=13338.
 
 .. code-block::
    :emphasize-lines: 11,12
@@ -580,10 +580,6 @@ The output that is shown in prompt afterwards:
    The following packages have unmet dependencies:
     target-sdk-provides-dummy : Conflicts: coreutils
    E: Unable to correct problems, you have held broken packages.
-.. 
-
-   To solve this problem, please revert commit: :guilabel:`179c5cb7fd0f06970135187f1203507aa55d6bde` 
-   in the poky repository (sources/poky). See also Bug 13338 https://bugzilla.yoctoproject.org/show_bug.cgi?id=13338.
 
 .. image:: https://www.bytesatwork.io/wp-content/uploads/2020/04/Bildschirmfoto-2020-04-20-um-19.41.44.jpg
    :scale: 100%
